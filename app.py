@@ -1,9 +1,15 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 import google.generativeai as genai
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Configure Gemini API
-genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
+api_key = os.getenv("GEMINI_API_KEY")
+genai.configure(api_key=api_key)
 
 st.set_page_config(page_title="CodeMate - AI Code Companion", layout="wide")
 
