@@ -39,3 +39,9 @@ CodeMate is a Streamlit-based web app that uses Google's Gemini API to assist de
 ```bash
 git clone https://github.com/your-username/codemate.git
 cd codemate
+```
+
+## Deployed on render
+
+https://codemate-ai-code-companion.onrender.com/
+
